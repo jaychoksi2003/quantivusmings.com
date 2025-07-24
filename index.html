@@ -1,59 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>QuantivusMings | Home</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>QuantivusMings - IT Infrastructure Experts</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/logo.png">
 </head>
+<body>
 
-<body class="bg-gray-100 text-gray-800">
-  <header class="bg-white shadow">
-    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
-      
-<div class="flex items-center space-x-4">
-  <img src="logo.png" alt="QuantivusMings Logo" class="h-12 w-12">
-  <div>
-    <h1 class="text-2xl font-bold text-blue-600">QuantivusMings</h1>
-    <p class="text-sm text-gray-600 italic">Empowering Digital Infrastructure</p>
-  </div>
-</div>
-
-      <nav class="space-x-4">
-        <a href="index.html" class="text-blue-600 font-semibold">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="why.html">Why Us</a>
-        <a href="contact.html">Contact</a>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <img src="assets/logo.png" alt="QuantivusMings Logo" class="logo" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
     </div>
   </header>
-  <main class="text-center py-20">
-    <h2 class="text-4xl font-bold mb-4" data-aos="fade-up">Empowering Digital Infrastructure</h2>
-    <p class="text-lg mb-8" data-aos="fade-up" data-aos-delay="100">Enabling Seamless Innovation Across Platforms</p>
-    <a href="contact.html" class="bg-blue-600 text-white px-6 py-3 rounded shadow hover:bg-blue-700" data-aos="fade-up" data-aos-delay="200">Get in Touch</a>
-  </main>
 
-  <section class="bg-white py-16 px-4" data-aos="fade-up">
-    <h3 class="text-3xl font-bold text-center mb-12">What Our Clients Say</h3>
-    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-      <div class="bg-gray-50 p-6 rounded shadow">
-        <p>"QuantivusMings transformed our infrastructure—secure, scalable, and reliable!"</p>
-        <h4 class="mt-4 font-semibold text-blue-600">– Rajiv Patel, CTO, InfiniSys</h4>
-      </div>
-      <div class="bg-gray-50 p-6 rounded shadow">
-        <p>"Our cloud migration was seamless. Their team is top-notch!"</p>
-        <h4 class="mt-4 font-semibold text-blue-600">– Susan Clark, IT Head, MedTechCorp</h4>
+  <!-- Hero Section -->
+  <section class="hero light-theme">
+    <div class="container">
+      <h1>Empowering Infrastructure. Simplifying Cloud.</h1>
+      <p>QuantivusMings - Reliable IT Infrastructure & Cloud Migration Services</p>
+      <a href="services.html" class="btn">Explore Our Services</a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials dark-theme">
+    <div class="container">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-cards">
+        <div class="card">
+          <p>"QuantivusMings helped us migrate 150+ servers to AWS with zero downtime."</p>
+          <strong>- DevOps Lead, Retail Corp</strong>
+        </div>
+        <div class="card">
+          <p>"Superb response and automation expertise. Highly recommended for infrastructure ops."</p>
+          <strong>- CIO, Financial Group</strong>
+        </div>
       </div>
     </div>
   </section>
-  
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+
+  <!-- Client Logos -->
+  <section class="clients light-theme">
+    <div class="container">
+      <h2>Our Trusted Clients</h2>
+      <div class="client-logos">
+        <img src="assets/client-logos/client1.png" alt="Client 1">
+        <img src="assets/client-logos/client2.png" alt="Client 2">
+        <img src="assets/client-logos/client3.png" alt="Client 3">
+        <img src="assets/client-logos/client4.png" alt="Client 4">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 QuantivusMings. All rights reserved.</p>
+    </div>
+  </footer>
 
 </body>
 </html>

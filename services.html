@@ -3,31 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Services | QuantivusMings</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Services - QuantivusMings</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .service-card {
+      background: #f9f9f9;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 0.6s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    }
+
+    .service-card h3 {
+      color: #003366;
+      margin-bottom: 0.5rem;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <header class="bg-blue-900 text-white p-6">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-white">QuantivusMings</h1>
-      <nav class="space-x-4">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html" class="text-yellow-300 font-semibold">Services</a>
-        <a href="why.html">Why Us</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="QuantivusMings Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" style="color: #00d8ff;">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-  <main class="max-w-6xl mx-auto py-12 px-4">
-    <h2 class="text-3xl font-bold mb-8 text-center">Our Core Services</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div><h3 class="text-xl font-semibold mb-2">Managed Infrastructure Services</h3><p>End-to-end monitoring, maintenance, and optimization of your IT environment.</p></div>
-      <div><h3 class="text-xl font-semibold mb-2">Cloud Services</h3><p>Cloud migration, cost optimization, and cloud-native architecture implementation.</p></div>
-      <div><h3 class="text-xl font-semibold mb-2">Application Development</h3><p>Custom software tailored for your business needs across platforms and devices.</p></div>
-      <div><h3 class="text-xl font-semibold mb-2">CMS Solutions</h3><p>Flexible content management systems built on WordPress, Drupal, and headless CMS platforms.</p></div>
-      <div><h3 class="text-xl font-semibold mb-2">Android/iOS App Development</h3><p>High-performance mobile apps designed for scalability and user engagement.</p></div>
+
+  <main>
+    <h1 style="text-align:center;">Our Services</h1>
+    <div class="services">
+      <div class="service-card">
+        <h3>Managed Infrastructure Services</h3>
+        <p>We handle end-to-end server, storage, network, and backup management, ensuring your systems remain secure and optimized.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Cloud Services</h3>
+        <p>Specializing in AWS, Azure, and hybrid environments with automation using Terraform, Ansible, and Systems Manager.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Application Development</h3>
+        <p>We build custom web and desktop applications with clean, modern interfaces and scalable backends.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>CMS Solutions</h3>
+        <p>Powerful and easy-to-use CMS solutions including WordPress, Drupal, and custom-built content platforms.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Android/iOS App Development</h3>
+        <p>Developing cross-platform mobile applications that deliver excellent performance and user experience.</p>
+      </div>
     </div>
   </main>
-</body>
-</html>
+
+  <footer>
+    &copy; 2025 QuantivusMings. All rights reserved.

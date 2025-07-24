@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - QuantivusMings</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .portfolio {
+      padding: 2rem;
+    }
+
+    .case-study {
+      background: #ffffff;
+      border-left: 5px solid #00d8ff;
+      padding: 2rem;
+      margin: 2rem 0;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      animation: fadeIn 0.6s ease;
+    }
+
+    .case-study h2 {
+      color: #003366;
+      margin-bottom: 0.5rem;
+    }
+
+    .case-study ul {
+      padding-left: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="QuantivusMings Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html" style="color: #00d8ff;">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="portfolio">
+    <h1 style="text-align:center;">Project Case Study</h1>
+
+    <div class="case-study">
+      <h2>Hybrid Infrastructure to AWS Cloud Migration</h2>
+      <p><strong>Client:</strong> Global Manufacturing Company</p>
+      <p><strong>Duration:</strong> 6 months</p>
+
+      <h3>Challenge:</h3>
+      <p>The client’s infrastructure spanned multiple on-premise data centers with RHEL 5–8 and Windows 2008–2019 servers. They needed a streamlined, secure migration to AWS while minimizing downtime.</p>
+
+      <h3>Solution:</h3>
+      <ul>
+        <li>Assessment and planning of 300+ Linux and Windows servers across hybrid environments.</li>
+        <li>Used AWS Migration Hub, Application Discovery Service, and Server Migration Service (SMS).</li>
+        <li>Automated provisioning and configuration using Ansible, Systems Manager, and CloudFormation.</li>
+        <li>Post-migration validation and optimization for performance and cost.</li>
+      </ul>
+
+      <h3>Result:</h3>
+      <ul>
+        <li>Successful migration to AWS Cloud with zero data loss and under 15 minutes average downtime.</li>
+        <li>Reduced infrastructure management time by 40% through automation.</li>
+        <li>Improved security posture and centralized monitoring using AWS CloudWatch and Systems Manager.</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 QuantivusMings. All rights reserved.
+  </footer>
+</body>
+</html>
